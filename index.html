@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video  class="video-background" loop muted autoplay>
+        <source src="169249 (720p).mp4" ></source>
+    </video>
+    <div class="video-overlay"></div>
+    <div class="container">
+    <div class="input-container" id="input-container">
+        <h1>Create a Custom Countdown!</h1>
+        <form action="" class="form" id="countdownForm">
+            <label for="" id="title">Title</label>
+            <input type="text" id="title" placeholder="what are counting down to?">
+            <label for="date-picker">Select a Date</label>
+            <input type="date" id="date-picker">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- countdown -->
+    <div class="countdown" id="countdown" hidden>
+        <h1 id="countdown-title"></h1>
+        <ul>
+            <li><span></span>Days</li>
+            <li><span></span>Hours</li>
+            <li><span></span>Minutes</li>
+            <li><span></span>Seconds</li>
+            <button id="countdown-button">Reset</button>
+        </ul>
+    </div>
+    <!-- compelete -->
+    <div class="compelete" id="complete" hidden>
+        <h1 class="compelete-title">Countdown Compelete! </h1>
+        <h1 id="complete-info"></h1>
+        <button id="complete-button">New Countdown!</button>
+    </div>
+</div>
+    <script src="scrippted.js"></script>
+</body>
+</html>
